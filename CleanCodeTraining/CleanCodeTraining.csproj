@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,7 +51,11 @@
     <Compile Include="Builder\model\Film.cs" />
     <Compile Include="Builder\model\FilmBuilder.cs" />
     <Compile Include="Builder\model\Genre.cs" />
-    <Compile Include="ExceptionHandling\CustomClass.cs" />
+    <Compile Include="ExceptionHandling\RightWayCustomException.cs" />
+    <Compile Include="ExceptionHandling\RightWayInnerCustomException.cs" />
+    <Compile Include="ExceptionHandling\WrongWayCustomClass.cs" />
+    <Compile Include="ExceptionHandling\WrongWayCustomException.cs" />
+    <Compile Include="ExceptionHandling\RightWayCustomClass.cs" />
     <Compile Include="LawOfDemeter\Main.cs" />
     <Compile Include="LawOfDemeter\model\Customer.cs" />
     <Compile Include="LawOfDemeter\model\exception\InsufficientFundsException.cs" />
@@ -61,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
