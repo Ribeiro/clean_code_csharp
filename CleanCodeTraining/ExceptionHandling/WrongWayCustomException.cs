@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CleanCodeTraining.model
+namespace CleanCodeTraining.ExceptionHandling
 {
-    class InsufficientFundsException : Exception
+    public class WrongWayCustomException : Exception
     {
         private string Message;
 
-        public InsufficientFundsException(string message)
+        public WrongWayCustomException(string message)
             : base(message)
         {
 
         }
-
     }
-
 }
