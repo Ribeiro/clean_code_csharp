@@ -9,7 +9,7 @@ namespace CleanCodeTraining.ExceptionHandling
 {
     public class RightWayCustomClass
     {
-        // http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET
+        //http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET
 
         ILog log = LogManager.GetLogger(typeof(RightWayCustomClass));
 
